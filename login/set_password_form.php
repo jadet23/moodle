@@ -44,12 +44,6 @@ class login_set_password_form extends moodleform {
      */
     public function definition() {
         global $CFG;
-        // Prepare a string showing whether the site wants login password autocompletion to be available to user.
-        if (empty($CFG->loginpasswordautocomplete)) {
-            $autocomplete = 'autocomplete="on"';
-        } else {
-            $autocomplete = '';
-        }
 
         $mform = $this->_form;
         $mform->setDisableShortforms(true);

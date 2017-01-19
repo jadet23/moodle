@@ -56,11 +56,6 @@ class block_login extends block_base {
         // TODO: now that we have multiauth it is hard to find out if there is a way to change password
         $forgot = $wwwroot . '/login/forgot_password.php';
 
-        if (!empty($CFG->loginpasswordautocomplete)) {
-            $autocomplete = 'autocomplete="off"';
-        } else {
-            $autocomplete = '';
-        }
 
         $username = get_moodle_cookie();
 
